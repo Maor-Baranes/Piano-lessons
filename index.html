@@ -3,100 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מאור ברנס | שיעורי פסנתר פרטיים בדרום</title>
-    <!-- Tailwind CSS for modern styling -->
+    <title>מאור ברנס | שיעורי פסנתר וגיטרה בדרום</title>
+    <!-- Tailwind CSS לעיצוב חופשי ואומנותי -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;800&family=Cinzel:wght@600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Assistant', sans-serif; }
+        .art-title { font-family: 'Assistant', sans-serif; font-weight: 800; }
     </style>
 </head>
-<body class="bg-stone-50 text-stone-800 flex flex-col min-h-screen">
+<body class="bg-[#0b090e] text-stone-200 flex flex-col min-h-screen relative overflow-x-hidden selection:bg-purple-600 selection:text-white">
+
+    <!-- אלמנטים של "בלגן אומנותי" וצבע ברקע -->
+    <div class="absolute top-[-10%] left-[-20%] w-[60vw] h-[60vw] rounded-full bg-purple-900/15 blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-[20%] right-[-20%] w-[50vw] h-[50vw] rounded-full bg-amber-600/10 blur-[130px] pointer-events-none"></div>
+    <div class="absolute bottom-[10%] left-[-10%] w-[55vw] h-[55vw] rounded-full bg-emerald-950/20 blur-[140px] pointer-events-none"></div>
+
+    <!-- קו קצה חד עליון (החוד) -->
+    <div class="h-1 w-full bg-gradient-to-r from-purple-600 via-amber-500 to-emerald-500"></div>
 
     <!-- Header / Hero Section -->
-    <header class="bg-stone-900 text-stone-100 py-24 px-6 text-center relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="relative z-10 max-w-3xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">מאור ברנס</h1>
-            <p class="text-xl md:text-2xl text-stone-300 font-light mb-6">שיעורי פסנתר פרטיים בדרום – קלאסי, מודרני ויצירתי</p>
-            <div class="w-20 h-1 bg-amber-500 mx-auto rounded"></div>
+    <header class="py-24 px-6 text-center relative z-10">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <h1 class="art-title text-5xl md:text-6xl text-white tracking-wide">מאור ברנס</h1>
+            <div class="h-[1px] w-24 bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto"></div>
+            <p class="text-xl md:text-2xl text-stone-300 font-light max-w-xl mx-auto">
+                שיעורי פסנתר וגיטרה בדרום – ללמוד את שפת המוזיקה, מהבסיס ועד ליצירה.
+            </p>
         </div>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="max-w-4xl mx-auto px-6 py-16 space-y-20 flex-grow">
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-8 space-y-20 relative z-10 flex-grow">
 
-        <!-- אודות -->
-        <section class="space-y-6">
-            <div class="flex items-center gap-4 border-b border-stone-300 pb-3">
-                <span class="text-amber-600 text-2xl">🎹</span>
-                <h2 class="text-2xl md:text-3xl font-bold text-stone-950">קצת עליי ועל הגישה שלי</h2>
-            </div>
-            <p class="text-lg leading-relaxed text-stone-600 text-justify">
-                שלום, אני מאור. מוזיקה עבורי היא שפה עמוקה המשלבת טכניקה, רגש והבנה מבנית. בשיעורים שלי אני שם דגש על פיתוח חשיבה מוזיקלית עצמאית, הבנת ההרמוניה שמאחורי התווים, ורכישת כלים שיאפשרו לך לא רק לנגן יצירות מוכנות – אלא גם להבין אותן לעומק, לאלתר וליצור בעצמך.
-            </p>
-            <p class="text-lg leading-relaxed text-stone-600 text-justify">
-                השיעורים מותאמים אישית לכל תלמיד ותלמידה – מילדים ומבוגרים שעושים את צעדיהם הראשונים על המקלדת, ועד לנגנים מתקדמים שרוצים לקחת את הטכניקה, קריאת התווים והתיאוריה המוזיקלית שלהם לרמה הבאה.
-            </p>
-        </section>
-
-        <!-- תוכנית הלימודים -->
+        <!-- הגישה והמסלול -->
         <section class="space-y-8">
-            <div class="flex items-center gap-4 border-b border-stone-300 pb-3">
-                <span class="text-amber-600 text-2xl">📚</span>
-                <h2 class="text-2xl md:text-3xl font-bold text-stone-950">מה נלמד בשיעורים?</h2>
+            <div class="flex items-center gap-4 border-b border-stone-800 pb-4">
+                <span class="text-2xl text-purple-500">⚡</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">הדרך והגישה שלי</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- קלף 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 transition hover:shadow-md">
-                    <div class="w-10 h-10 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center font-bold mb-4">01</div>
-                    <h3 class="font-bold text-lg mb-2 text-stone-900">יסודות וטכניקה</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">קואורדינציה, קריאת תווים, יציבה נכונה ליד הפסנתר ושיטות אימון אפקטיביות שמביאות לתוצאות.</p>
+            
+            <div class="space-y-6 text-lg leading-relaxed text-stone-300">
+                <p class="text-justify">
+                    אני מאמין שהתלמיד או התלמידה צריכים קודם כל <strong class="text-white font-semibold">ליהנות מהדרך</strong>. מוזיקה היא לא תבנית קשיחה של שינון תווים, אלא מסע יצירתי וחווייתי. 
+                </p>
+                <p class="text-justify">
+                    בנוסף על מסלול הלימוד בו נרכוש את כל הבסיס המקצועי – מתווים, אקורדים וקצבים, דרך סולפז' ומודוסים, ועד להלחנה ואלתור – אנחנו נעבוד על שירים ש<strong class="text-purple-400 font-semibold">אתם בוחרים</strong>. כל שיר שתרצו לקבלת עיבוד מיוחד לפסנתר, נלמד לנגן אותו ונפענח ביחד את הסוד התיאורטי מאחוריו – מה בעצם גורם לשיר הזה לעבוד עלינו רגשית ומבנית.
+                </p>
+                <p class="p-4 bg-stone-900/40 border-r-2 border-amber-500 rounded-l-lg text-amber-200">
+                    כל הגילאים וכל הז'אנרים מתקבלים בברכה – אף פעם לא מאוחר מדי להתחיל! :)
+                </p>
+                <p class="text-justify">
+                    אז אם בא לכם מורה לפסנתר שיכול ללמד אתכם כל מושג במוזיקה קלאסית, אבל גם יתאים את עצמו לחלוטין אליכם – בין אם זה מזרחית, מטאל כבד, באך, פסקולים של הארי פוטר או היפ-הופ של אמינם – הגעתם למקום הנכון.
+                </p>
+            </div>
+
+            <!-- חלוקה למסלולים -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+                <div class="p-6 rounded-2xl bg-stone-900/30 border border-stone-800/80 hover:border-purple-500/40 transition duration-300 backdrop-blur-md">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                        <span class="text-purple-500">🎹</span> פסנתר ומקלדות
+                    </h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">שיעורים בכל הרמות. מצעדים ראשונים למתחילים מוחלטים ועד לטכניקות מתקדמות, הרמוניה עשירה וניתוח מבנים מורכבים.</p>
                 </div>
-                <!-- קלף 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 transition hover:shadow-md">
-                    <div class="w-10 h-10 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center font-bold mb-4">02</div>
-                    <h3 class="font-bold text-lg mb-2 text-stone-900">תיאוריה והרמוניה</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">הבנת המבנה המוזיקלי, אקורדים, סולמות, וניתוח יצירות שיעזרו לך לראות את התמונה המלאה.</p>
-                </div>
-                <!-- קלף 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 transition hover:shadow-md">
-                    <div class="w-10 h-10 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center font-bold mb-4">03</div>
-                    <h3 class="font-bold text-lg mb-2 text-stone-900">ביטוי ויצירתיות</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">פיתוח שמיעה, ליווי שירים, אלתור וחופש פעולה בסגנונות מגוונים (קלאסי, רוק, מודרני ועוד).</p>
+                <div class="p-6 rounded-2xl bg-stone-900/30 border border-stone-800/80 hover:border-emerald-500/40 transition duration-300 backdrop-blur-md">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                        <span class="text-emerald-500">🎸</span> גיטרה למתחילים
+                    </h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">שיעורי יסוד לפיתוח קואורדינציה, אקורדים, ליווי שירים וקצב נכון למי שרוצה להתחיל לנגן בכיף ובקלות.</p>
                 </div>
             </div>
         </section>
 
-        <!-- מיקום ותעריפים -->
-        <section class="bg-stone-900 text-stone-100 p-8 md:p-12 rounded-2xl shadow-lg relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500 rounded-full blur-3xl opacity-10"></div>
-            <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl font-bold">מיקום ותמחור השיעורים</h2>
-                <p class="text-stone-400 max-w-xl mx-auto">השיעורים מתקיימים בסטודיו שלי באזור הדרום (או בבית התלמיד בתיאום מראש ובתוספת תשלום על נסיעות).</p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto pt-4">
-                    <div class="bg-stone-800 p-5 rounded-xl border border-stone-700">
-                        <span class="text-stone-400 block text-sm mb-1">שיעור של 45 דקות</span>
-                        <span class="text-2xl font-bold text-amber-400">₪130</span>
-                    </div>
-                    <div class="bg-stone-800 p-5 rounded-xl border border-stone-700">
-                        <span class="text-stone-400 block text-sm mb-1">שיעור של 60 דקות</span>
-                        <span class="text-2xl font-bold text-amber-400">₪160</span>
-                    </div>
-                </div>
+        <!-- קליפ הדגמה (Placeholder) -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-stone-800 pb-4">
+                <span class="text-2xl text-amber-500">🎬</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">קצת הדגמה מוזיקלית</h2>
             </div>
+            
+            <!-- מיכל לקליפ הדגמה עתידי -->
+            <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-stone-900/60 border border-stone-800 flex flex-col items-center justify-center p-8 text-center group hover:border-stone-700 transition duration-300">
+                <div class="w-16 h-16 rounded-full bg-stone-800 flex items-center justify-center text-stone-400 group-hover:scale-110 group-hover:bg-purple-900/40 group-hover:text-purple-400 transition duration-300 mb-4">
+                    <svg class="w-8 h-8 fill-current ml-1" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-stone-300">קליפ ההדגמה יעלה לכאן בקרוב!</h3>
+                <p class="text-stone-500 text-sm max-w-sm mt-1">כאן תוכלו לראות אותי מנגן, מאלתר ומעבד שירים בלייב.</p>
+                
+                <!-- הערה טכנית בקוד עבורך:
+                     כאשר תרצה להעלות סרטון מיוטיוב, מחק את כל מה שבתוך הדיב שלמעלה והדבק קוד iframe של יוטיוב בצורה הזו:
+                     <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                -->
+            </div>
+        </section>
+
+        <!-- קצת עליי -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-stone-800 pb-4">
+                <span class="text-2xl text-emerald-500">☕</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">קצת עליי</h2>
+            </div>
+            <p class="text-lg leading-relaxed text-stone-300 text-justify">
+                למדתי פסנתר, גיטרה ותיאוריה למעלה מעשור בקונסרבטוריון האקדמיה למוזיקה בירושלים ובקונסרבטוריון בבאר שבע. הרקע הממסדי והאקדמי העניק לי את השפה והדיוק, אך החופש האומנותי הוא הלב של העשייה שלי. 
+            </p>
+            <p class="text-lg leading-relaxed text-stone-300 text-justify">
+                בזמני הפנוי אני מלחין מטאל ומוזיקת פסקול, מנתח באופן קבוע את המבנים הנסתרים של שירים מכל הז'אנרים, ומעבד אותם לפסנתר ולכלים נוספים. בשבילי, אין סגנון מוזיקלי נחות – לכל שיר טוב יש היגיון פנימי מרתק שאפשר לגלות וללמוד ממנו.
+            </p>
+        </section>
+
+        <!-- תעריף ואופן השיעורים -->
+        <section class="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-stone-900/60 to-stone-950/80 border border-stone-800 text-center space-y-6 backdrop-blur-md relative overflow-hidden">
+            <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-purple-600/10 rounded-full blur-3xl"></div>
+            <h2 class="text-2xl md:text-3xl font-bold text-white">תעריף ואופן השיעורים</h2>
+            
+            <div class="text-5xl font-extrabold text-amber-400 py-2">
+                ₪100 <span class="text-lg text-stone-400 font-normal">/ לשיעור</span>
+            </div>
+
+            <p class="text-stone-300 max-w-xl mx-auto text-lg leading-relaxed">
+                אני נייד לחלוטין ומגיע ישירות אליכם לבית. 
+                השיעורים מתבצעים אצלכם בכל מקום שבו יש <strong class="text-white">מקלדת, אורגן או פסנתר</strong>, או עבור שיעורי גיטרה – אליהם אביא איתי את הגיטרה שלי אליכם.
+            </p>
         </section>
 
         <!-- יצירת קשר -->
         <section class="text-center space-y-6 py-8">
-            <h2 class="text-2xl md:text-3xl font-bold text-stone-950">מוכן/ה להתחיל לנגן?</h2>
-            <p class="text-stone-600 max-w-md mx-auto">אשמח לענות על כל שאלה ולתאם איתך שיעור ניסיון ללא התחייבות.</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-white">רוצה להתחיל לנגן אחרת?</h2>
+            <p class="text-stone-400 max-w-md mx-auto">דבר/י איתי, נבין מה את/ה אוהב/ת לשמוע, ונתחיל לבנות את הדרך המוזיקלית שלך.</p>
             <div class="pt-4">
-                <!-- יש להחליף את ה-XXXXXXXXX במספר הטלפון שלך, למשל: 972501234567 -->
-                <a href="https://wa.me/972506760432?text=היי%20מאור,%20אשמח%20לשמוע%20פרטים%20על%20שיעורי%20פסנתר" 
+                <!-- החלף את ה-XXXXXXXXX במספר הטלפון שלך, למשל: 972501234567 -->
+                <a href="https://wa.me/972XXXXXXXXX?text=היי%20מאור,%20אשמח%20לשמוע%20פרטים%20על%20שיעורי%20פסנתר%20או%20גיטרה" 
                    target="_blank"
-                   class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-8 rounded-full transition duration-150 ease-in-out shadow-md hover:scale-105 transform">
+                   class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-10 rounded-full transition duration-300 ease-in-out shadow-lg hover:shadow-emerald-900/30 hover:scale-105 transform">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.852.002-2.63-1.023-5.101-2.883-6.963C16.593 1.976 14.12 1.05 11.49 1.05c-5.436 0-9.861 4.42-9.865 9.854-.002 1.942.5 3.829 1.455 5.514l-.994 3.637 3.737-.98c1.554.85 3.235 1.298 4.724 1.298z"/>
                     </svg>
@@ -108,8 +148,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-stone-950 text-stone-500 py-8 text-center text-sm border-t border-stone-900">
-        <p>© 2026 מאור ברנס – מורה לפסנתר בדרום. כל הזכויות שמורות.</p>
+    <footer class="bg-[#07060a] text-stone-600 py-8 text-center text-sm border-t border-stone-900/80 relative z-10">
+        <p>© 2026 מאור ברנס – מורה לפסנתר וגיטרה בדרום. כל הזכויות שמורות.</p>
     </footer>
 
 </body>
